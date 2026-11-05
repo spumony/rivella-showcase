@@ -1,6 +1,6 @@
 # Rivella
 
-Multi-tenant SaaS for service businesses. A client writes to the business's Telegram bot, and an assistant on the Claude API answers questions, checks free slots and books the visit. It runs in production for a sim-racing club.
+Multi-tenant SaaS for service businesses. A client writes to the business's Telegram bot, and an assistant on the Claude API answers questions, checks free slots and books the visit. It runs in production for several businesses, including a sim-racing club.
 
 **Live:** [rivella.app](https://rivella.app) (admin panel)
 
