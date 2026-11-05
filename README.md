@@ -4,6 +4,12 @@ Multi-tenant SaaS for service businesses. A client writes to the business's Tele
 
 **Live:** [rivella.app](https://rivella.app) (admin panel)
 
+<p align="center">
+  <img src="docs/chat-demo.gif" width="360" alt="Telegram chat: the assistant quotes a price, collects the client's name and phone, and sends a booking request">
+</p>
+
+Screenshots show a demo business with sample data. The chat replies come from the live bot.
+
 ## What the assistant does
 
 - Answers questions from the business's knowledge base, using PostgreSQL full-text search.
@@ -13,6 +19,20 @@ Multi-tenant SaaS for service businesses. A client writes to the business's Tele
 - Hands the conversation to a human manager when it can't help.
 
 Each business gets its own bot, its own booking account and its own settings (system prompt, knowledge base, pricing). They all share one deployment. A new business is added from the superadmin panel without a redeploy.
+
+## Admin panel
+
+Conversations with clients and their booking status:
+
+![Conversations](docs/conversations.png)
+
+Conversion, bookings per day and room utilization:
+
+![Analytics](docs/analytics.png)
+
+The knowledge base the assistant answers from:
+
+![Knowledge base](docs/knowledge.png)
 
 ## How it's built
 
