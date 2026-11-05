@@ -36,7 +36,7 @@ The knowledge base the assistant answers from:
 
 ## How it's built
 
-- The assistant runs a bounded tool-calling loop, and a validator checks every reply before it goes out.
+- The assistant runs a bounded tool-calling loop over 15 tools (availability, booking, rescheduling, promo codes, knowledge search, hand-off to a manager and more), and a validator checks every reply before it goes out.
 - Five scheduled jobs: reminders, post-visit follow-up, no-show detection, abandoned-booking recovery and a daily digest.
 - Multi-tenancy is row-level: every record is scoped by `tenantId`.
 - Architecture decisions are written down as ADRs.
